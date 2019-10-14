@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script src="MVVM.js"></script>
+<body>
+    <div id="app">
+        <input type="text" v-model="school.name" />
+        <div>{{school.age}}</div>
+        <div>{{school.name}}</div>
+    </div>
+    <script src="MVVM.js"></script>
+    <script>
+       let vm = new Vue({
+           el:'#app',
+           data:{
+               school:{
+                   name:'你好',
+                   age:10,
+               }
+           },
+           methods:{
+
+           }
+       })
+    </script>
+</body>
+</html>
